@@ -8,7 +8,7 @@ public class CaptchaTests {
     public void OperandPattern_1_ShouldBe_Minus() {
         Captcha captcha = new Captcha(1, 1, 3, 1);
         String operator = captcha.getOperator();
-        assertEquals("*", operator);
+        assertEquals("/", operator);
     }
     @Test
     public void OperandPattern_1_ShouldBe_Delete() {
