@@ -12,15 +12,7 @@ public class Captcha {
     }
 
     public int getLeft() {
-        if(left == 9){
-            return 9;
-        }
-        if(left == 7){
-            return 7;
-        }
-        if(left == 5){
-            return 5;
-        }
+
         return left;
     }
 
