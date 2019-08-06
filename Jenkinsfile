@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
       image 'maven:3.6.1-jdk-8'
-      args '-p 9090:8080'
     }
 
   }
@@ -25,11 +24,6 @@ pipeline {
     stage('Build') {
       steps {
         sh 'mvn package'
-      }
-    }
-    stage('Deploy') {
-      steps {
-        sh 'mvn sprong-boot:run'
       }
     }
   }
